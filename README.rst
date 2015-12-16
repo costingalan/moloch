@@ -68,7 +68,8 @@ guidelines. (Improvements to these instructions are always welcome!)
 Installing Elasticsearch
 ------------------------
 
-Recommend version **1.6.2**, requires at least 1.4.x
+Recommend version **1.7.3**, requires at least 1.4.x, versions before 1.6.1
+have several security issues.
 
 1. Prep the ``elasticsearch`` machines by increasing max file descriptors add
    allowing memory locking. 
@@ -83,7 +84,7 @@ Recommend version **1.6.2**, requires at least 1.4.x
 
 3. `Download elasticsearch <https://www.elastic.co/downloads/elasticsearch>`_.
    **Important:** At this time all development is done with `elasticsearch
-   1.6.2 <https://www.elastic.co/downloads/past-releases/elasticsearch-1-6-2>`_.
+   1.7.3 <https://www.elastic.co/downloads/past-releases/elasticsearch-1-7-3>`_.
 
 4. Uncompress the archive you downloaded.
 
@@ -160,9 +161,9 @@ Building Capture
      here are the pieces you need:
 
      + `glib-2 <http://ftp.gnome.org/pub/gnome/sources/glib>`_ version 2.30 or
-       higher (2.42 is recommended for static builds)::
+       higher (2.46.2 is recommended)::
 
-            wget http://ftp.gnome.org/pub/gnome/sources/glib/2.42/glib-2.42.0.tar.xz
+            wget http://ftp.gnome.org/pub/gnome/sources/glib/2.46/glib-2.46.2.tar.xz
             ./configure --disable-xattr --disable-shared --enable-static --disable-libelf --disable-selinux
 
      + `yara <http://yara-project.googlecode.com>`_ version 1.6 or higher::

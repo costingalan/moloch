@@ -1,4 +1,17 @@
-0.12.0 2015/10/XX
+0.12.2 2015/12/xx
+  - capture - basic redis detection
+  - viewer - connections node distance (issue #428)
+  - easybutton - glib 2.46.2 (issue #423)
+  - easybutton - disable usb support for libpcap (issue #426)
+  - viewer - connections highlighting (issue #431)
+
+
+0.12.1 2015/11/10
+  - capture - fixed startup glib error
+  - configure - fixed version number
+  - easybutton - ES 1.7.3
+
+0.12.0 2015/11/09
   - NOTICE: libcurl (>= 7.21.7) is now required, sorry
   - NOTICE: db.pl upgrade is required
   - NOTICE: duplicate items in available both in tags and elsewhere have been 
@@ -29,6 +42,11 @@
   - db - Added warning for ES below 1.6.2
   - wise - use native hashtable, required for threatstream
   - viewer - fixed addTags to work with session that have no tags
+  - capture - fixed multiple smtp, smb and ssh buffer overflow read/writes (reported by jbremer)
+  - viewer - fixed multiple XSS injections (reported by jbremer)
+  - viewer - fixed crash when viewing large mime messages
+  - capture - irc detection improvement
+  - capture - --quiet flag (issue #427)
 
 0.11.5 2015/06/02
   - NOTICE: Only ES 1.[45].x is supported by this version. 

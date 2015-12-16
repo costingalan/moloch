@@ -1,4 +1,4 @@
-AC_INIT([moloch], [0.12.0-GIT])
+AC_INIT([moloch], [0.12.2-GIT])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_PROG_CC
 AC_PROG_CXX
@@ -392,7 +392,7 @@ AC_ARG_WITH(glib2,
         cd $owd;
       fi
       GLIB2_CFLAGS="-I$withval/glib -I$withval -I$withval/gmodule -I$withval/gobject"
-      GLIB2_LIBS="$withval/gio/.libs/libgio-2.0.a $withval/gobject/.libs/libgobject-2.0.a $withval/gthread/.libs/libgthread-2.0.a $withval/gmodule/.libs/libgmodule-2.0.a $withval/glib/.libs/libglib-2.0.a"
+      GLIB2_LIBS="$withval/glib/.libs/libglib-2.0.a $withval/gio/.libs/libgio-2.0.a $withval/gobject/.libs/libgobject-2.0.a $withval/gthread/.libs/libgthread-2.0.a $withval/gmodule/.libs/libgmodule-2.0.a $withval/glib/.libs/libglib-2.0.a"
     else
       AC_ERROR(glib.h or libglib-2.0.a not found in $withval)
     fi
